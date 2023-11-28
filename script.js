@@ -174,3 +174,5 @@ const colors = [
     "- Bob Marley",
     "- Eleanor Roosevelt"
   ];
+
+  

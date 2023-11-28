@@ -15,20 +15,23 @@ Please read the README below in the JS Editor before beginning. Feel free to del
     <meta name='viewport' content='width=device-width,initial-scale=1.0'>
     <title>Random Quote Machine</title>
     <link rel='stylesheet' href='styles.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src='script.js' defer></script>
+    <script src="https://kit.fontawesome.com/fc123bbf5b.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Random Quote Machine</h1>
     <div id='container'>
       <div id='quote-box'>
-        <div id='text'></div>
-        <div id='author'></div>
+        <div id='text'><i class="fa-solid fa-quote-left"></i>a quote by Leonardo da Vinci</div>
+        <div id='author'>- Leonardo da Vinci</div>
         <div id='buttons'>
-          <a class='button' target="_top" id='tweet-quote' href='twitter.com/intent/tweet'></a>
-          <button class='button' id='new-quote'><button>
+          <a class='button' target="_top" id='tweet-quote' href='twitter.com/intent/tweet'><i class="fa-brands fa-x-twitter"></i></a>
+          <a class='button' target="_top" id='share-quote' href='twitter.com/intent/tweet'><i class="fa-brands fa-linkedin-in"></i></a>
+          <button class='button' id='new-quote'>New Quote</button>
         </div>
       </div>
+      <div id='footer'>by <a href='https://codepen.io/eaknott/'>eaknott</a></div>
     </div>
-        <div id='footer'>by <a href='https://codepen.io/eaknott/'>eaknott</a></div>
   </body>
 </html>
