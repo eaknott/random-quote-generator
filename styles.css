@@ -28,7 +28,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 60px;
+    padding: 40px 70px;
     width: 500px;
     border-radius: 5px;
     min-height: 150px;
@@ -65,7 +65,7 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     width: 500px;
-    margin: 30px;
+    margin: 30px 30px 0 30px;
 }
 
 .button:hover {
