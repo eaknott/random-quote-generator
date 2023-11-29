@@ -175,7 +175,7 @@ function getRandomQuote() {
 
   $('#tweet-quote').attr(
     'href',
-    'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
+    'https://twitter.com/intent/tweet?hashtags=inspirationalquotes&related=freecodecamp&text=' +
     encodeURIComponent('"' + quotes[tracker] + '"' + authors[tracker])
   );
 }
