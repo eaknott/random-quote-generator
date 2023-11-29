@@ -156,7 +156,6 @@ function changeColor() {
   $('.fa-quote-left').animate({color: colors[color]},800);
   $('#text').animate({color: colors[color]},800);
   $('#author').animate({color: colors[color]},300);
-
 }
 
 function getRandomQuote() {
