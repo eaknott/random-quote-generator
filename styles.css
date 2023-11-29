@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat-Regular.ttf);
+}
 
 html, body {
     background-color: #818E7B;
@@ -25,37 +28,64 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 30px 60px;
     width: 500px;
     border-radius: 5px;
     min-height: 150px;
 }
 
-#text, #author {
-    font-family: 'Monserrat', sans-serif;
+.fa-quote-left {
+    margin: 0 10px 0 10px;
+    font-size: 45px;
+}
+
+#text, #author, #quote-text {
+    font-family: 'Montserrat';
+    color: #818E7B;
+}
+
+#quote-text {
+    display: flex;
+    flex-direction: row;
 }
 
 #text {
-    font-size: 30px;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: left;
 }
 
 #author {
-    margin-left: auto;
+    margin: 15px 0 15px auto;
+    font-size: 20px;
 }
 
 #buttons {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    margin: 30px;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 90%;
 }
 
 .button {
     color: white;
-    background-color: red;
-    padding: 10px 20px;
+    background-color:  #818E7B;
+    padding: 15px 20px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 a, #footer {
     color: white;
     text-decoration: none;
+    font-family: "Montserrat";
 }
 
 #footer {
