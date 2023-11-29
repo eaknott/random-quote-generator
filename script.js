@@ -19,9 +19,9 @@ const colors = [
     '#ddb892',
     '#b27092',
     '#efc88b'
-  ];
+];
   
-  const quotes = [
+const quotes = [
     "One can have no smaller or greater mastery than mastery of oneself.",
     "Do not think that what is hard for you to master is humanly impossible; and if it is humanly possible, consider it to be within your reach.",
     "One repays a teacher badly if one remains only a pupil.",
@@ -82,9 +82,9 @@ const colors = [
     "There is nothing noble in being superior to your fellow men. True nobility lies in being superior to your former self.",
     "Love the life you live. Live the life you love.",
     "You must do the things you think you cannot do."
-  ];
+];
   
-  const authors = [
+const authors = [
     "- Leonardo da Vinci",
     "- Marcus Aurelius",
     "- Friedrich Nietzsche",
@@ -145,6 +145,41 @@ const colors = [
     "- Ernest Hemingway",
     "- Bob Marley",
     "- Eleanor Roosevelt"
-  ];
+];
 
+function changeColor() {
+  let color = Math.floor(Math.random() * colors.length);
+
+  $('html').animate({backgroundColor: colors[color]},800);
+  $('body').animate({backgroundColor: colors[color]},800);
+  $('.button').animate({backgroundColor: colors[color]},800);
+  $('.fa-quote-left').animate({color: colors[color]},800);
+  $('#text').animate({color: colors[color]},800);
+  $('#author').animate({color: colors[color]},300);
+
+}
+
+function getRandomQuote() {
+  let tracker = Math.floor(Math.random() * quotes.length);
   
+  $('#quote-text').animate({opacity: 0}, 800, function() {
+    $(this).animate({opacity: 1}, 800);
+    $('#text').text(quotes[tracker]);
+  });
+  $('#author').animate({opacity: 0}, 800, function() {
+    $(this).animate({opacity: 1}, 300);
+    $(this).text(authors[tracker]);
+  });
+
+  changeColor();
+
+  $('#tweet-quote').attr(
+    'href',
+    'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
+    encodeURIComponent('"' + quotes[tracker] + '"' + authors[tracker])
+  );
+}
+
+$(document).ready(function() {
+  $('#new-quote').on('click', getRandomQuote);
+});
