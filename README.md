@@ -11,6 +11,7 @@ This site generates quotes and their authors randomly from an array of inspiring
 With each new quote generated and displayed, the screen's color also changes, with the color randomly selected from a list of colors.
 
 <img src="newQuoteNewColor.png">
+![alt text](newQuoteNewColor.png)
 
 This random quote generator is coded with HTML, CSS, jQuery, and JavaScript. It uses the Google Font 'Montserrat'.
 
