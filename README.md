@@ -25,8 +25,8 @@ There are two functional buttons:
 
 ## Issues
 
-- The first quote when page loads is always the same quote/author.
-- The "X/Twitter" button does not fill in the quote and hashtag for the initial quote, only works after the "New quote" button is clicked
+- [ ] The first quote when page loads is always the same quote/author.
+- [ ] The "X/Twitter" button does not fill in the quote and hashtag for the first quote, only works after the "New quote" button is clicked
 
 ## Acknowledgments
 
